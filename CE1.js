@@ -15,3 +15,4 @@ validAnagram('aaa', 'aa')
 validAnagram('aaa', 'aaa')
 
 
+$
