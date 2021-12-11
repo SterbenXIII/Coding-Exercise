@@ -1,7 +1,7 @@
 
 
 
-const l = (str) => {
+const ce9 = (str) => {
     let seen = {};
     let start = 0;
     let maxLength = 0;
@@ -15,4 +15,4 @@ const l = (str) => {
     return maxLength
 }
 
-console.log(l("rithmschool"))
+console.log(ce9("rithmschool"))
