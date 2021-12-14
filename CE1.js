@@ -4,15 +4,11 @@ function validAnagram(a, b) {
     if (a1 !== b1) return console.log('Invalid Input');
     a1 = a.split('').sort().join('');
     b1 = b.split('').sort().join('');
-    if (a1 === b1) {
-        console.log("True");
-    } else {
-        console.log("False");
-    }
+
+    a1 === b1 ? console.log("True") : console.log("False")
 
 }
 validAnagram('aaa', 'aa')
 validAnagram('aaa', 'aaa')
 
 
-$
