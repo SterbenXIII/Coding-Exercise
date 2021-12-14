@@ -1,7 +1,9 @@
 const stringifyNumbers = (obj) => {
     let newObj = {};
     for (let key in obj) {
-        typeof obj[key] === 'number' ? newObj[key] = obj[key].toString() : typeof obj[key] === 'object' && !Array.isArray(obj[key]) ? newObj[key] = stringifyNumbers(obj[key]) : newObj[key] = obj[key];
+        typeof obj[key] === 'number' ?
+            newObj[key] = obj[key].toString() : typeof obj[key] === 'object' && !Array.isArray(obj[key]) ?
+            newObj[key] = stringifyNumbers(obj[key]) : newObj[key] = obj[key];
 
     }
     return newObj;
